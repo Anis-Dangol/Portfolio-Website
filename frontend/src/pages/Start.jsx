@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const words = ["websites", "games", "ui/ux", "things", "other"];
+const words = ["websites", "games", "ui/ux", "things", "others"];
 
 const Start = () => {
-  const [index, setIndex] = useState(0); // Which word in list
-  const [subIndex, setSubIndex] = useState(0); // How many letters of that word are shown
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
   const [blink, setBlink] = useState(true);
 
   useEffect(() => {
-    // blinking cursor toggle
     const cursorBlink = setInterval(() => setBlink((v) => !v), 500);
     return () => clearInterval(cursorBlink);
   }, []);
@@ -18,7 +17,7 @@ const Start = () => {
     if (index === words.length) setIndex(0);
 
     if (!deleting && subIndex === words[index].length) {
-      setTimeout(() => setDeleting(true), 1000); // pause before deleting
+      setTimeout(() => setDeleting(true), 1000);
       return;
     }
 
@@ -43,14 +42,17 @@ const Start = () => {
       id="start"
       className="flex flex-col justify-center items-center min-h-screen p-6 py-20 px-6 max-w-5xl mx-auto"
     >
+      {/* Section header */}
       <span className="text-gray-500 text-xl font-bold tracking-tight">
         &lt;Start/&gt;
       </span>
+      {/* Introduction text */}
       <p className="text-gray-300 text-4xl font-semibold mt-4">
         Hi, my name is{" "}
         <span className="text-cyan-400 font-bold">Anish Dangol</span>{" "}
         <span>.</span> <br />
       </p>
+      {/* Animated typewriter effect for skills */}
       <p className="text-gray-300 text-4xl font-semibold mt-4">
         I{" "}
         <span className="italic font-light font-handwriting">edit videos </span>{" "}
@@ -63,11 +65,14 @@ const Start = () => {
             whiteSpace: "pre",
           }}
         >
+          {/* Show current word up to subIndex letters */}
           {words[index].substring(0, subIndex)}
+          {/* Blinking cursor */}
           <span className="glitch text-cyan-400">{blink ? "|" : " "}</span>
         </span>
         <br />
       </p>
+      {/* Footer text */}
       <span className="text-gray-500 pt-3 text-xl tracking-widest">
         Let me show U...
       </span>

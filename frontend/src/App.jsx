@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import React from "react";
 import { LoadingScreen } from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Start from "./pages/Start";
@@ -26,9 +25,24 @@ function App() {
 
   return (
     <>
-      <main>
-        {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
-      </main>
+      <div className="relative">
+        <Navbar />
+        <main>
+          {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+          <div
+            className={`min-h-screen transition-opacity duration-700 ${
+              isLoaded ? "opacity-100" : "opacity-0"
+            } bg-[#100e17] text-gray-100`}
+          >
+            <Start />
+          </div>
+          <Work className="vertical-line" />
+          <Lab />
+          <About />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
