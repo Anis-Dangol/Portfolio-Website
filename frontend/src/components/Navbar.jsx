@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
@@ -87,7 +87,9 @@ const Navbar = () => {
             className="flex justify-center items-center font-mono p-4 rounded-md transform transition-transform duration-300 hover:scale-110 outline-none focus:outline-none"
           >
             <span className="text-cyan-300 text-3xl pr-1 font-bold">&lt;</span>
-            <span className="text-white text-4xl font-bold tracking-wider">ANISH</span>
+            <span className="text-white text-4xl font-bold tracking-wider">
+              ANISH
+            </span>
             <span className="text-cyan-300 text-3xl pl-1 font-bold">/&gt;</span>
           </a>
 
