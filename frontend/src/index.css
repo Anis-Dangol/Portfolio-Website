@@ -58,17 +58,6 @@ body {
   z-index: 0;
 }
 
-.line2 {
-  position: absolute;
-  top: 0; /* start at the top of the bullet */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: calc(100vh - 50%); /* adjust as needed */
-  background-color: rgb(0, 195, 255);
-  z-index: 1;
-}
-
 .glitch {
   position: relative;
   color: #fff;
@@ -161,24 +150,4 @@ body {
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
   }
-}
-
-/* styles.css */
-.custom-style {
-  text-align: left;
-  color: #f9f9f9;
-  font-weight: 400;
-  font-family: "Roboto Mono", "Courier New", Courier, monospace !important;
-  font-size: 16px;
-  line-height: 1.6;
-  box-sizing: border-box;
-  backface-visibility: hidden;
-  cursor: none !important;
-  position: relative;
-  z-index: 1;
-}
-
-.methods {
-  color: #5918df;
-  display: inline;
 }
