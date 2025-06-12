@@ -66,8 +66,15 @@ npm run build
 
 The output will be in the `dist/` folder.
 
+## License
+
+This portfolio is licensed for inspiration and learning purposes only.
+
+- You may view, reference, and take inspiration from the design and ideas.
+- You may **not** copy, reproduce, or redistribute the code, images, or content without explicit written permission from the author.
+
+If you wish to use any part of this portfolio beyond inspiration, please contact me for permission.
+
 ---
 
 **Created by Anish Dangol**
-
-Feel free to fork, customize, and use for your own portfolio!
