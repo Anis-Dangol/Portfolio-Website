@@ -18,12 +18,21 @@ const Lab = () => {
         <div className="bg-[#100e17] rounded shadow hover:shadow-lg transition p-4 m-8">
           <h3 className="text-cyan-400 mb-2 font-semibold">Website</h3>
           <a
-            href="https://github.com/Anis-Dangol/HTML-Landing-Pages-Project"
+            href="https://github.com/Anis-Dangol/Stationery-Ecommerce-Website"
             className="text-gray-400 text-sm hover:text-[#5918df]"
             target="_blank"
             rel="noopener noreferrer"
           >
-            HTML Landing Pages Project
+            Sab Ko Stationary (E-commerce Website)
+          </a>
+          <br />
+          <a
+            href="https://github.com/Anis-Dangol/Twitter-Clone"
+            className="text-gray-400 text-sm hover:text-[#5918df]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter Clone
           </a>
           <br />
           <a
@@ -76,6 +85,16 @@ const Lab = () => {
           >
             50 - Small Project (HTML, CSS, JS)
           </a>
+          <br />
+          <a
+            href="https://github.com/Anis-Dangol/HTML-Landing-Pages-Project"
+            className="text-gray-400 text-sm hover:text-[#5918df]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            HTML Landing Pages Project
+          </a>
+          <br />
         </div>
       </div>
     </section>

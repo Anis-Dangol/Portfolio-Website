@@ -94,24 +94,36 @@ const About = () => {
             <span className="text-[#3b3553] pr-5">14</span>
             <span className="text-[#3b3553] pl-5">......</span>
             <span className="pl-1">{"{"}</span>
-            <span className="text-[#24e33a]">{` '2022-now': 'Bachelor of Science, Computer Science and Information Technology(CSIT) at Omega Int'l College' `}</span>
+            <span className="text-[#24e33a]">{` '2022-present': 'Bachelor of Science, `}</span>
+            <span
+              className="text-[#24e33a] cursor-pointer"
+              title="Computer Science and Information Technology"
+            >
+              CSIT
+            </span>
+            <span className="text-[#24e33a]">{` at Omega Int'l College' `}</span>
             <span className="">{"}"}</span>
           </div>
           <div className="text-white">
             <span className="text-[#3b3553] pr-5">15</span>
             <span className="text-[#3b3553] pl-5">......</span>
             <span className="pl-1">{"{"}</span>
-            <span className="text-[#24e33a]">{` '2019-2021': 'Master\'s Degree, Computer Science at Omega Int'l College' `}</span>
+            <span className="text-[#24e33a]">{` '2019-2021': '+2 in Science, Computer Science at Omega Int'l College' `}</span>
             <span>{"}"}</span>
           </div>
           <div className="text-white">
             <span className="text-[#3b3553] pr-5">16</span>
             <span className="text-[#3b3553] pl-5">......</span>
             <span className="pl-1">{"{"}</span>
-            <span className="text-[#24e33a]">
-              {` '2005-2019': 'Secondary Education Examination(SEE) at Paradise School' `}{" "}
+            <span className="text-[#24e33a]">{` '2005-2019': '`}</span>
+            <span
+              className="text-[#24e33a] cursor-pointer"
+              title="Secondary Education Examination"
+            >
+              SEE
             </span>
-            <span className="">{"}"}</span>
+            <span className="text-[#24e33a]">{` at Paradise School' `}</span>
+            <span>{"}"}</span>
           </div>
           <div className="text-white">
             <span className="text-[#3b3553] pr-5">17</span>
@@ -137,14 +149,14 @@ const About = () => {
             <span className="text-[#3b3553] pr-5">21</span>
             <span className="text-[#3b3553] pl-5">....</span>
             <span className="pl-1 text-[#24e33a] ">
-              "HTML, CSS, JavaScript, TypeScript, React, jQuery, Node.js, PHP,
+              "HTML, CSS, JavaScript, TypeScript, React, jQuery, Node.js,
               Python, C, C++, C#,
             </span>
           </div>
           <div className="pl-10 text-white">
             <span className="text-[#3b3553] pl-5">....</span>
             <span className="text-[#24e33a] pl-1">
-              SQL, MySQL, MongoDB, Git "
+              SQL, MySQL, MongoDB, Git, Adobe Premiere Pro, Davinci Resolve "
             </span>
             <span> ]</span>
           </div>
