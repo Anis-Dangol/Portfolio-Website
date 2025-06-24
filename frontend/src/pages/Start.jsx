@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const words = ["websites", "games", "ui/ux", "things", "others"];
+const words = ["build websites.", "develop games.", "design ui/ux.", "edit Videos.", "other things."];
 
 const Start = () => {
   const [index, setIndex] = useState(0);
@@ -49,14 +49,14 @@ const Start = () => {
       {/* Introduction text */}
       <p className="text-gray-300 text-4xl font-semibold mt-4">
         Hi, my name is{" "}
-        <span className="text-cyan-400 font-bold">Anish Dangol</span>{" "}
+        <span className="text-cyan-400 font-bold">Anish Dangol</span>
         <span>.</span> <br />
       </p>
       {/* Animated typewriter effect for skills */}
       <p className="text-gray-300 text-4xl font-semibold mt-4">
         I{" "}
-        <span className="italic font-light font-handwriting">edit videos </span>{" "}
-        and develop{" "}
+        <span className="italic font-light font-handwriting">love coding </span>{" "}
+        and {" "}
         <span
           className="glitch text-cyan-400 font-medium"
           style={{

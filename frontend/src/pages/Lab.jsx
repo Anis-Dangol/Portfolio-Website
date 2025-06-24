@@ -1,6 +1,3 @@
-// client/src/pages/Lab.js
-import React from "react";
-
 const Lab = () => {
   return (
     <section
