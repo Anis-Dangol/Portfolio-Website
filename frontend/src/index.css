@@ -58,6 +58,18 @@ body {
   z-index: 0;
 }
 
+@media (max-width: 768px) {
+  .vertical-line {
+    left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .vertical-line {
+    display: none;
+  }
+}
+
 .glitch {
   position: relative;
   color: #fff;
@@ -104,6 +116,20 @@ body {
   background-position: center;
   height: 200px;
   width: 350px;
+}
+
+@media (max-width: 768px) {
+  .project-image {
+    height: 150px;
+    width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-image {
+    height: 120px;
+    width: 240px;
+  }
 }
 
 .block-reveal__block.white {

@@ -20,7 +20,7 @@ const Work = () => {
       <span className="text-gray-500 text-xl font-bold tracking-tight">
         &lt;Work/&gt;
       </span>
-      <p className="text-gray-300 text-4xl font-semibold mt-4">
+      <p className="text-gray-300 text-2xl md:text-3xl lg:text-4xl font-semibold mt-4 text-center">
         Selected Web, videos, project <br />
       </p>
 

@@ -36,27 +36,26 @@ const Start = () => {
 
     return () => clearTimeout(timeout);
   }, [subIndex, index, deleting]);
-
   return (
     <section
       id="start"
-      className="flex flex-col justify-center items-center min-h-screen p-6 py-20 px-6 max-w-5xl mx-auto"
+      className="flex flex-col justify-center items-center min-h-screen p-4 md:p-6 py-20 px-4 md:px-6 max-w-5xl mx-auto"
     >
       {/* Section header */}
-      <span className="text-gray-500 text-xl font-bold tracking-tight">
+      <span className="text-gray-500 text-lg md:text-xl font-bold tracking-tight">
         &lt;Start/&gt;
       </span>
       {/* Introduction text */}
-      <p className="text-gray-300 text-4xl font-semibold mt-4">
+      <p className="text-gray-300 text-2xl md:text-3xl lg:text-4xl font-semibold mt-4 text-center">
         Hi, my name is{" "}
         <span className="text-cyan-400 font-bold">Anish Dangol</span>
         <span>.</span> <br />
       </p>
       {/* Animated typewriter effect for skills */}
-      <p className="text-gray-300 text-4xl font-semibold mt-4">
+      <p className="text-gray-300 text-2xl md:text-3xl lg:text-4xl font-semibold mt-4 ">
         I{" "}
-        <span className="italic font-light font-handwriting">love coding </span>{" "}
-        and {" "}
+        <span className="italic font-light font-handwriting">love coding</span>{" "}
+        and{" "}
         <span
           className="glitch text-cyan-400 font-medium"
           style={{
@@ -73,7 +72,7 @@ const Start = () => {
         <br />
       </p>
       {/* Footer text */}
-      <span className="text-gray-500 pt-3 text-xl tracking-widest">
+      <span className="text-gray-500 pt-3 text-lg md:text-xl tracking-widest text-center">
         Let me show U...
       </span>
     </section>
