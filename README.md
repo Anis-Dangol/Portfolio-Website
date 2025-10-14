@@ -8,7 +8,7 @@ A modern, interactive portfolio website built with React and Tailwind CSS, showc
 
 - Single-page application
 - Animated project cards with interactive hover effects
-- Social media links (GitHub, Instagram, LinkedIn, YouTube)
+- Social media links (GitHub, Instagram, LinkedIn)
 - Custom favicons and manifest for PWA support
 - Clean, modern UI with dark mode styling
 
