@@ -1,5 +1,4 @@
 const Contact = () => {
-
   return (
     <section
       id="contact"
@@ -12,7 +11,7 @@ const Contact = () => {
         <p className="flex mb-5 text-2xl sm:mb-10 md:text-3xl md:mb-10 lg:text-4xl lg:mb-10 font-bold tracking-wide justify-center items-center text-center">
           Find me on
         </p>
-        <div className="grid text-lg md:text-xl gap-4 md:gap-8 mb-20 md:mb-32 grid-cols-2 md:grid-cols-2 lg:grid-cols-2 text-cyan-500 text-center">
+        <div className="grid text-lg md:text-xl gap-4 md:gap-8 mb-20 md:mb-32 grid-cols-1 md:grid-cols-1 lg:grid-cols-3 text-cyan-500 text-center">
           <a
             href="https://github.com/Anis-Dangol"
             className="hover:text-[#5918df]"
@@ -36,14 +35,6 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             LinkedIn
-          </a>
-          <a
-            href="https://www.youtube.com/@faith_blink"
-            className="hover:text-[#5918df]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Youtube
           </a>
         </div>
       </div>

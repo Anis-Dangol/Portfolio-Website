@@ -53,24 +53,6 @@ const Lab = () => {
           </a>
         </div>{" "}
         <div className="bg-[#100e17] rounded shadow hover:shadow-lg transition p-4 m-2 md:m-4 lg:m-8">
-          <h3 className="text-cyan-400 mb-2 font-semibold">Videos</h3>
-          <a
-            href="https://www.youtube.com/watch?v=EQ8XEN0qs4Q&ab_channel=AnishDangol"
-            className="text-gray-400 text-sm hover:text-[#5918df]"
-          >
-            By My Side - AMV
-          </a>
-          <br />
-          <a
-            href="https://www.youtube.com/watch?v=Ga_B8W8gwC4&ab_channel=AnishDangol"
-            className="text-gray-400 text-sm hover:text-[#5918df]"
-          >
-            Where We Started - AMV
-          </a>
-        </div>
-      </div>{" "}
-      <div className="grid mt-4 md:mt-8 gap-4 md:gap-8 md:flex items-center justify-center grid-cols-1 max-w-6xl w-full">
-        <div className="bg-[#100e17] rounded shadow hover:shadow-lg transition p-4 m-2 md:m-4 lg:m-8 ">
           <h3 className="text-cyan-400 mb-2 font-semibold">Random</h3>
           <a
             href="https://github.com/Anis-Dangol/50-Projects"
@@ -91,7 +73,7 @@ const Lab = () => {
           </a>
           <br />
         </div>
-      </div>
+      </div>{" "}
     </section>
   );
 };

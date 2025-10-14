@@ -156,7 +156,7 @@ const About = () => {
           <div className="pl-10 text-white">
             <span className="text-[#3b3553] pl-5">....</span>
             <span className="text-[#24e33a] pl-1">
-              SQL, MySQL, MongoDB, Git, Adobe Premiere Pro, Davinci Resolve "
+              SQL, MySQL, MongoDB, Git,"
             </span>
             <span> ]</span>
           </div>

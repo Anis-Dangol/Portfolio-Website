@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 
-const words = ["build websites.", "develop games.", "design ui/ux.", "edit Videos.", "other things."];
+const words = [
+  "build websites.",
+  "develop games.",
+  "design ui/ux.",
+  "other things.",
+];
 
 const Start = () => {
   const [index, setIndex] = useState(0);
