@@ -9,8 +9,8 @@ const About = () => {
       <span className="flex justify-center items-center text-gray-500 text-lg md:text-xl font-bold tracking-tight mt-5">
         &lt;About/&gt;
       </span>
-      <Timeline />
-      <div className="text-white px-4 sm:px-6 md:px-8 lg:pl-56 lg:pr-10">
+      {/* <Timeline /> */}
+      <div className="text-white px-4 sm:px-6 md:px-8 lg:px-10">
         <div className="text-[#f9f9f9] font-mono rounded-xl text-sm md:text-lg leading-relaxed">
           <div className="text-white">
             <span className="text-[#3b3553] pr-10">01</span>

@@ -27,7 +27,7 @@ function App() {
     <>
       <div className="relative">
         <Navbar />
-        <main>
+        <main className="w-full min-h-screen">
           {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
           <div
             className={`min-h-screen transition-opacity duration-700 ${

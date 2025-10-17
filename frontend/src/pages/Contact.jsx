@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 const Contact = () => {
   return (
     <section
@@ -8,33 +11,46 @@ const Contact = () => {
         &lt;Contact/&gt;
       </span>
       <div className="mt-10 md:mt-10">
-        <p className="flex mb-5 text-2xl sm:mb-10 md:text-3xl md:mb-10 lg:text-4xl lg:mb-10 font-bold tracking-wide justify-center items-center text-center">
+        <p className="flex mb-5 text-4xl sm:mb-10 md:text-3xl md:mb-10 lg:text-4xl lg:mb-10 font-bold tracking-wide justify-center items-center text-center">
           Find me on
         </p>
-        <div className="grid text-lg md:text-xl gap-4 md:gap-8 mb-20 md:mb-32 grid-cols-1 md:grid-cols-1 lg:grid-cols-3 text-cyan-500 text-center">
+        <div className="grid text-lg md:text-xl lg:text-2xl gap-4 sm:gap-4 md:gap-6 lg:gap-8  md:mb-32 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-cyan-500 text-center">
           <a
-            href="https://github.com/Anis-Dangol"
-            className="hover:text-[#5918df]"
+            href="mailto:anis.dangol121@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="group flex items-center gap-2 text-gray-400 hover:text-[#5918df] transition-colors"
           >
-            GitHub
+            <MdEmail className="text-2xl group-hover:text-[#5918df] transition-colors mt-1" />
+            <span>Email</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/anish-dangol-555a13261/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-400 hover:text-[#5918df] transition-colors"
+          >
+            <FaLinkedin className="text-2xl mt-1" />
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/Anis-Dangol"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-400 hover:text-[#5918df] transition-colors"
+          >
+            <FaGithub className="text-2xl mt-1" />
+            <span>GitHub</span>
           </a>
           <a
             href="https://www.instagram.com/anis_dangol/?hl=en"
-            className="hover:text-[#5918df]"
             target="_blank"
             rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-400 hover:text-[#5918df] transition-colors"
           >
-            Instagram
-          </a>
-          <a
-            href="https://www.linkedin.com/in/anish-dangol-555a13261/"
-            className="hover:text-[#5918df]"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
+            <FaInstagram className="text-2xl mt-1" />
+            <span>Instagram</span>
           </a>
         </div>
       </div>

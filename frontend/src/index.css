@@ -11,6 +11,8 @@ body {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #100e17;
+  /* Prevent horizontal overflow causing unwanted right-side whitespace */
+  overflow-x: hidden;
 }
 
 .bullet-wrapper {
@@ -108,27 +110,43 @@ body {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  margin-top: 100px;
+  margin: 2.5rem 0; /* less aggressive top margin and consistent spacing */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px; /* enforce uniform card width similar to project 3 */
 }
 
 .project-image {
   background-size: cover;
   background-position: center;
-  height: 200px;
-  width: 350px;
+  width: 100%;
+  aspect-ratio: 16 / 10; /* keeps a consistent height relative to width */
+  max-width: 100%;
+  display: block;
 }
 
 @media (max-width: 768px) {
-  .project-image {
-    height: 150px;
-    width: 280px;
+  .project-box {
+    max-width: 100%;
   }
 }
 
+/* Ensure grid anchors center cards and don't stretch them on larger screens */
+.grid > a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.grid > a > div,
+.grid > a > .project-box {
+  width: 100%;
+  max-width: 360px;
+}
+
 @media (max-width: 480px) {
-  .project-image {
-    height: 120px;
-    width: 240px;
+  .project-box {
+    margin: 1.5rem 0;
   }
 }
 
