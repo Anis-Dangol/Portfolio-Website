@@ -1,4 +1,5 @@
 import Timeline from "./Timeline";
+import { FaDownload } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
       </span>
       {/* <Timeline /> */}
       <div className="text-white px-4 sm:px-6 md:px-8 lg:px-10">
-        <div className="text-[#f9f9f9] font-mono rounded-xl text-sm md:text-lg leading-relaxed">
+        <div className="text-[#f9f9f9] font-mono rounded-xl text-sm md:text-lg leading-relaxed relative">
           <div className="text-white">
             <span className="text-[#3b3553] pr-10">01</span>
             <span className="text-[#5918df]">class</span>{" "}
@@ -171,6 +172,15 @@ const About = () => {
             <span className="pl-1">{"}"}</span>
           </div>
         </div>
+
+        <a
+          href="../assets/Anish - Resume.pdf"
+          download="Anish - Resume.pdf"
+          className="absolute right-5 top-5 -translate-y-1/2 bg-[#5918df] text-white px-4 py-2 text-sm rounded-lg font-semibold flex items-center gap-2 hover:bg-[#e9e9e9] hover:text-[#100e17] transition"
+        >
+          <FaDownload size={14} />
+          Resume
+        </a>
       </div>
     </section>
   );

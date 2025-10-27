@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto Condensed, Lato, Arial, sans-serif;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #100e17;
+  /* Prevent horizontal overflow causing unwanted right-side whitespace */
+  overflow-x: hidden;
+}
+
+.bullet-wrapper {
+  position: relative;
+  width: 35%;
+  height: 15vh; /* full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 468px) {
+    width: 100%;
+  }
+}
+
+.bullet {
+  background-color: rgb(27, 25, 30);
+  height: 9px;
+  width: 9px;
+  border: 2px solid rgb(0, 195, 255);
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+/* Vertical line */
+.line {
+  position: absolute;
+  top: 100%; /* start just below the bullet */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(120vh - 50%); /* from bullet to bottom */
+  background-color: rgb(0, 195, 255);
+  z-index: 1;
+}
+
+.vertical-line {
+  position: fixed;
+  top: 0;
+  left: 15%; /* Adjust as needed for your layout */
+  width: 2px;
+  height: 100vh;
+  background-color: rgb(0, 195, 255);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .vertical-line {
+    left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .vertical-line {
+    display: none;
+  }
+}
+
+.glitch {
+  position: relative;
+  color: #fff;
+  text-shadow: 2px 0 #00fff9, -2px 0 #ff00c8, 1px 1px #00fff9, -1px -1px #ff00c8;
+  animation: glitch 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 0 #00fff9, -2px 0 #ff00c8;
+    transform: translate(0, 0);
+  }
+  20% {
+    text-shadow: 2px 2px #00fff9, -2px -2px #ff00c8;
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    text-shadow: 2px -2px #00fff9, -2px 2px #ff00c8;
+    transform: translate(2px, -2px);
+  }
+  60% {
+    text-shadow: 4px 0 #00fff9, -4px 0 #ff00c8;
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    text-shadow: 2px 2px #00fff9, -2px -2px #ff00c8;
+    transform: translate(1px, -1px);
+  }
+  100% {
+    text-shadow: 2px 0 #00fff9, -2px 0 #ff00c8;
+    transform: translate(0, 0);
+  }
+}
+
+.project-box {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2.5rem 0; /* less aggressive top margin and consistent spacing */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px; /* enforce uniform card width similar to project 3 */
+}
+
+.project-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 16 / 10; /* keeps a consistent height relative to width */
+  max-width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    max-width: 100%;
+  }
+}
+
+/* Ensure grid anchors center cards and don't stretch them on larger screens */
+.grid > a {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.grid > a > div,
+.grid > a > .project-box {
+  width: 100%;
+  max-width: 360px;
+}
+
+@media (max-width: 480px) {
+  .project-box {
+    margin: 1.5rem 0;
+  }
+}
+
+.block-reveal__block.white {
+  background-color: white;
+}
+
+.spinner-border-wrp {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spinner-border {
+  border: 4px solid transparent;
+  border-top: 0px solid cyan;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@layer utilities {
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+}

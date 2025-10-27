@@ -40,6 +40,15 @@ const Lab = () => {
           >
             Music Player App
           </a>
+          <br />
+          <a
+            href="https://github.com/Anis-Dangol/Streamify"
+            className="text-gray-400 text-sm hover:text-[#5918df]"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Streamify - real-time video Calling App
+          </a>
         </div>{" "}
         <div className="bg-[#100e17] rounded shadow hover:shadow-lg transition p-4 m-2 md:m-4 lg:m-8">
           <h3 className="text-cyan-400 mb-2 font-semibold">Games</h3>
@@ -51,7 +60,7 @@ const Lab = () => {
           >
             Endless-Tic Tac Toe
           </a>
-        </div>{" "}
+        </div>
         <div className="bg-[#100e17] rounded shadow hover:shadow-lg transition p-4 m-2 md:m-4 lg:m-8">
           <h3 className="text-cyan-400 mb-2 font-semibold">Random</h3>
           <a

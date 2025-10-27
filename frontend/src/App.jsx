@@ -9,7 +9,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
-import "./index.css";
 
 function App() {
   const fetchApi = async () => {
