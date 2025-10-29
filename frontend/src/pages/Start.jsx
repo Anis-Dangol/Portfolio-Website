@@ -41,23 +41,27 @@ const Start = () => {
 
     return () => clearTimeout(timeout);
   }, [subIndex, index, deleting]);
+
   return (
     <section
       id="start"
-      className="flex flex-col justify-center items-center min-h-screen p-4 md:p-6 py-20 px-4 md:px-6 max-w-5xl mx-auto"
+      className="flex flex-col justify-center items-center min-h-screen px-4 sm:px-6 md:px-10 lg:px-20 py-20 max-w-6xl mx-auto text-center"
     >
       {/* Section header */}
-      <span className="text-gray-500 text-lg md:text-xl font-bold tracking-tight">
+      <span className="text-gray-500 text-base sm:text-lg md:text-xl font-bold tracking-tight">
         &lt;Start/&gt;
       </span>
+
       {/* Introduction text */}
-      <p className="text-gray-300 text-2xl md:text-3xl lg:text-4xl font-semibold mt-4 text-center">
+      <p className="text-gray-300 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-4 leading-snug">
         Hi, my name is{" "}
         <span className="text-cyan-400 font-bold">Anish Dangol</span>
-        <span>.</span> <br />
+        <span>.</span>
+        <br className="hidden sm:block" />
       </p>
-      {/* Animated typewriter effect for skills */}
-      <p className="text-gray-300 text-2xl md:text-3xl lg:text-4xl font-semibold mt-4 ">
+
+      {/* Animated typewriter effect */}
+      <p className="text-gray-300 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mt-4 leading-snug">
         I{" "}
         <span className="italic font-light font-handwriting">love coding</span>{" "}
         and{" "}
@@ -69,15 +73,13 @@ const Start = () => {
             whiteSpace: "pre",
           }}
         >
-          {/* Show current word up to subIndex letters */}
           {words[index].substring(0, subIndex)}
-          {/* Blinking cursor */}
           <span className="glitch text-cyan-400">{blink ? "|" : " "}</span>
         </span>
-        <br />
       </p>
+
       {/* Footer text */}
-      <span className="text-gray-500 pt-3 text-lg md:text-xl tracking-widest text-center">
+      <span className="text-gray-500 pt-5 text-sm sm:text-base md:text-lg tracking-widest">
         Let me show U...
       </span>
     </section>
